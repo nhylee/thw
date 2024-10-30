@@ -1,0 +1,510 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:rgb(247, 243, 237);
+    padding: 0 9% ;
+    margin: 0 auto;
+    box-sizing: border-box;
+}    
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    text-align: center;
+    color: steelblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.navbar1 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+   
+}
+button{
+    cursor: pointer;
+}
+button{
+    cursor: pointer;
+}
+.icon-cart{
+    position: relative;
+}
+.icon-cart span{
+    background-color: #f37f7f;
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    width: 30px;
+    height: 30px;
+    color: #f2f2f2;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+#backButton{
+    margin-left: 20px;
+    background-color: #fc7536;
+    border-radius: 5px;
+    border: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px;
+}
+#backButton:hover{
+    background-color: #da500b;
+}
+.cartTab{
+    background-color: #f2d9b7;
+    color: #000;
+    width: 500px;
+    max-width: 100%;
+    position: fixed;
+    top: 0;
+    right: -400px;
+    bottom: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Chia thành ba phần: header, nội dung và footer */
+    transition: right 0.5s; /* Hiệu ứng trượt vào */
+    z-index: 1001; /* Đặt z-index cao để đảm bảo tab ở trên các phần tử khác */
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.cartTab .close {
+    background-color: transparent;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    border: none;
+    cursor: pointer;
+} 
+.cartTab .close:hover{
+    color:#fc8f2f;
+} 
+.cartTab h1{
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+.cartTab .cart1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px 20px;
+}
+.cartTab .cart1 button.close{
+    background-color: #eee;
+}
+.cartTab .listCart{
+    overflow: auto;
+}
+.cart .listCart::-webkit-scrollbar{
+    width: 0;
+}
+.cart-items{
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 1rem;
+    width: 100%;
+    
+}
+.cart-items table{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-collapse: collapse;
+}
+.cart-items table tr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #bdb2b2;
+    padding: 10px 0;
+}
+td{
+    padding: 12px 0;
+    text-align: center;
+    flex: 1;
+}
+
+.cart-items table tr td:last-child{
+    text-align: right;
+}
+.cartTab{
+    right: -500px;
+    transition: 0.5s;
+}
+.cart-items table td img {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+    ;}
+.cart-items .quantity-value {
+    font-weight: bold;
+    padding: 0 5px;
+}
+.cart-items .quantity-increase,
+.cart-items .quantity-decrease {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 5px 8px;
+    cursor: pointer;
+}
+.cart-items .quantity-increase:hover{
+    background-color: #da500b;
+}
+.cart-items .quantity-decrease:hover{
+    background-color: #da500b;
+}
+#class-dele{
+    text-align: right;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+#class-dele:hover{
+    color: #da500b;
+}
+.cartTab .price-total {
+    position: absolute;
+    bottom: 60px; /* Đặt ngay phía trên nút Check Out */
+    right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+body.activeTabCart .cartTab{
+    right: 0;
+}
+body.activeTabCart .navbar1{
+    transform:  translate(-250px);
+}
+
+.total-amount {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 5px;
+    margin-bottom: 10px; /* Thêm khoảng cách dưới Total */
+}
+
+.cart-total{
+    font-size: 20px;
+    color: #000;
+    font-weight: 500;
+}
+.check {
+    width: 100%;
+    margin-top: 1rem; 
+    background-color: #fa7116;
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    border:none;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+.check:hover{
+    background-color: #da500b;
+}
+.home-button {
+    background-color: #fff /* Màu nền */
+    color white; /* Màu chữ */
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px; /* Bo góc */
+    margin-right: 20px; /* Khoảng cách bên phải */
+}
+
+.search-bar {
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #ccc; /* Đường viền */
+    border-radius: 5px; /* Bo góc */
+    margin-right: 10px; /* Khoảng cách bên phải */
+}
+
+#searchfood{
+    padding: 10px 15px;
+    background-color: #2196F3; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    margin-right: 20px;
+}
+#searchfood:hover {
+    background-color: #da500b; 
+}
+
+.container {
+    padding: 20px;
+}
+/* .navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fa943b;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+
+.navbar a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    background-color: #e3752c;
+} */
+.navbar{
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.navbar a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: inline-block;
+}
+
+.food-list{
+    width: 170px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #c9a37c;
+    padding: 10px 13px;
+    border-radius: 10px;
+    color: #383737;
+    margin: 0px;
+}
+.food-list img{
+    width: 120px;
+    height: 120px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.food-list h5{
+    margin-top: 5px;
+    margin-bottom: 0px;
+
+}
+.category {
+    margin-top: 30px;
+}
+
+.menuitem h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    gap: 20px;
+    align-items: center;
+    justify-content: center; 
+}
+
+.menu-item {
+    width: 190px;
+    display: flex;
+    align-items: center;
+    
+    flex-direction: column;
+    gap: 10px;
+    border: 2px solid #ccc;
+    background-color: #f3efcf;
+    background-size: 250px;
+    padding: 10px ;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px -3px ;
+    text-align: center;
+}
+
+.menu-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.food-image {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+
+@media (max-width: 00px) {
+    .menu-item {
+        width: 90%;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .menu-item {
+        width: 45%;
+    }
+}
+
+@media (min-width: 901px) {
+    .menu-item {
+        width: 20%; 
+    }
+}
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.quantity-controls button {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+}
+
+.menu-item .price{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #110707;
+    font-weight: 600;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+.menu-item i {
+    color: #000; 
+    font-size: 30px; 
+    cursor: pointer;
+    padding: 5px;
+}
+
+.menu-item i:hover {
+    color: #fa7116; 
+}
+
+.add-to-cart-icon {
+    width: 30px; 
+    height: 30px; 
+    cursor: pointer; 
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-content{
+    background-color: bisque;
+}
+#modalTitle{
+    text-align: center;
+    font-size: 30px;
+}
+.modal-image {
+    display: block; /* Đặt hình ảnh thành block */
+    margin: 0 auto; /* Căn giữa hình ảnh */
+    max-width: 100%; /* Giới hạn chiều rộng tối đa */
+    height: auto; /* Giữ tỷ lệ chiều cao */
+}
+.quantity-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.quantity-control button {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Đẩy nút sang bên phải */
+    margin-top: 10px; /* Thêm khoảng cách phía trên */
+    
+}
+
+#addToCartButton {
+    padding: 10px 20px; /* Thêm padding cho nút */
+    background-color: #4CAF50; /* Màu nền cho nút */
+    color: white; /* Màu chữ */
+    border: none; /* Xóa viền */
+    border-radius: 5px; /* Bo góc */
+    cursor: pointer; /* Con trỏ khi hover */
+}
+
+#addToCartButton:hover {
+    background-color: #f28a29; /* Màu nền khi hover */
+}
+
+#quantity {
+    margin: 0 15px;
+    font-size: 18px;
+}
+#modalPrice{
+    font-weight: bold;
+    font-size: 20px;
+}

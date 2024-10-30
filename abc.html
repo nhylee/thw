@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU</title>
+    <link rel="stylesheet" href="menu.css">
+    <script src="https://kit.fontawesome.com/7ef0680c96.js" crossorigin="anonymous"></script>
+    
+    
+</head>
+<body>
+    <header>
+        <div class="heading">
+            <h1>Menu-Gọi món</h1>
+        </div>
+        <div class="navbar1">
+            <a href="index.html" class="home-button"><img src="../btl/menu_img/trangchu.png" alt="Trang chu" style="width: 30px;;"></a>
+            <input type="text" class="search-bar" placeholder="Tìm kiếm món ăn..." id="searchinput">
+            <i class="fa-solid fa-magnifying-glass" id="searchfood" ></i> 
+            <div class="icon-cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>0</span>
+            </div>
+            <button id="backButton" style="display: none !important;">Menu</button>
+            <div class="contentTab">
+                
+            </div>
+        </div>
+        <div class="cartTab" id="cartTab">
+            <h1>My Cart</h1>
+            <div class="listCart">
+                <div class="cart-items">
+                    <form action="">
+                        <table></table>
+                       
+                    
+                    </form>
+                </div>
+            </div>
+            <div class="price-total" style="text-align: right; ;">
+                <p style="font-weight: bold;">Tổng tiền: <span>0 </span> VDN</p>
+            </div>
+            <div class="cart1">
+                
+                <button class="close">&times;</button> 
+                <button class="check" >Đặt hàng</button>
+            </div>
+        </div>
+    </header>
+    <hr>
+    <div class="menu" id="menu">
+        <div class="navbar">
+            <a href="#combo" >
+                <div class="food-list">
+                    <img src="../btl/menu_img/garantruyenthong.jpg" alt="">
+                    <h5>Combo</h5>
+                </div>
+            </a>
+            <a href="#gagion" >
+                <div class="food-list">
+                    <img src="../btl/menu_img/gachienmam.jpg" alt="">
+                    <h5>Gà rán</h5>
+                </div>
+            </a>
+            <a href="#ganuong" >
+                <div class="food-list">
+                    <img src="../btl/menu_img/ganuongong.jpg" alt="">
+                    <h5>Gà nướng</h5>
+                </div>
+            </a>
+            <a href="#monankem" >
+                <div class="food-list">
+                    <img src="../btl/menu_img/bapcai.jpg" alt="">
+                    <h5>Món ăn kèm </h5>
+                </div>
+            </a>
+            
+            <a href="#nuoc" >
+                <div class="food-list">
+                    <img src="../btl/menu_img/462561664_837082141643200_1434878447239089816_n.jpg" alt="">
+                    <h5>Đồ uống</h5>
+                </div>
+            </a>
+        </div>
+        
+    <section >
+        <div id="combo" class="menuitem">
+            <h2>Combo khuyến mãi </h2>
+            <div class="menu-list">
+                <div class="menu-item" data-name="Combo ga ran truyen thong">
+                    <img src="../btl/anh123/combotruyenthong.jpg" alt="Combo" class="food-image" >
+                    <div>
+                        <h3>Combo gà rán truyền thống</h3>
+                        <p>Gồm: 2 miếng gà rán + 1 phần khoai tây + 1pepsi</p>
+                    </div>
+                    <p class="price">Giá: <span> 99.000 VND</span> </p>
+                    <i class="fa-solid fa-cart-shopping" alt="Thêm vào giỏ hàng" class="add-to-cart-icon" ></i>
+                </div>
+                <div class="menu-item" data-name="Combo gà rán xốt cay">
+                    <img src="../btl/anh123/combogasotcay.jpg" alt="Combo" class="food-image" >
+                    <div>
+                        <h3>Combo Gà Rán sốt Cay</h3>
+                        <p>Gồm:  2 miếng gà rán xốt cay + 1 phần khoai tây phomai + 1pepsi</p>
+                    </div>
+                    <p class="price">Giá: <span>105.000 VND</span> </p>
+                    <i class="fa-solid fa-cart-shopping" alt="Thêm vào giỏ hàng" class="add-to-cart-icon" ></i>
+                </div>
+                <div class="menu-item" data-name="Combo gà giòn không xương">
+                    <img src="../btl/anh123/combogakhongxuong.jpg" alt="Combo" class="food-image" >
+                    <div>
+                        <h3>Combo gà giòn không xương</h3>
+                        <p>Gồm : 1 phần gà rán + 1 phần mỳ ý + 1 coca</p>
+                    </div>
+                    <p class="price">Giá: <span> 119.000 VND</span> </p>
+                    <i class="fa-solid fa-cart-shopping" alt="Thêm vào giỏ hàng" class="add-to-cart-icon" ></i>
+                </div>
+                <div class="menu-item" data-name="Combo gà rán mật ong">
+                    <img src="../btl/anh123/combogamatong.jpg" alt="Combo" class="food-image">
+                    <div>
+                        <h3>Combo gà rán mật ong</h3>
+                        <p>Gồm : 1 gà chiên + 1 gà mật ong + 1pepsi</p>
+                    </div>
+                    <p class="price">Giá: <span> 134.000 VND</span> </p>
+                    <i class="fa-solid fa-cart-shopping" alt="Thêm vào giỏ hàng" class="add-to-cart-icon" ></i>
+                </div>
+                <div class="menu-item" data-name="Combo gà rán sốt phô mai">
+                    <img src="../btl/anh123/combophomai.jpg" alt="Combo" class="food-image" >
+                    <div>
+                        <h3>Combo gà rán sốt phô mai</h3>
+                        <p>Gồm :1 Gà rán phô mai+1 mì ý+1 pepsi</p>
+                        <br>
+                    </div>
+                    <p class="price">Giá: <span> 115.000 VND</span> </p>
+                    <i class="fa-solid fa-cart-shopping" alt="Thêm vào giỏ hàng" class="add-to-cart-icon" ></i>
+                </div>
+                <div class="menu-item" data-name="Combo gà rán chiên mắm tỏi">
+                    <img src="../btl/menu_img/gachienmam.jpg" alt="Combo" class="food-image" >
+                    <div>
+                        <h3>Combo gà rán chiên mắm tỏi</h3>
+                        <p>Gồm :1 Gà chiên mắm + 1salad +1 coca</p>
+                        <br>
+                    </div>
+                    <p class="price">Giá: <span> 110.000 VND</span> </p>
+                    <i class="fa-solid fa-cart-shopping" alt="Thêm vào giỏ hàng" class="add-to-cart-icon" ></i>
+                </div>
+                <div class="menu-item" data-name="Combo gà rán thập cẩm">
+                    <img src="../btl/anh123/combothapcam.jpg" alt="Combo" class="food-image" >
+                    <div>
+                        <h3>Combo gà rán thập cẩm</h3>
+                        <p>Gồm: 2 miếng gà truyền thống + 2 gà phô mai
+                            + 1 khoai chien +1 coca</p>
+                    </div>
+                    <p class="price">Giá: <span> 125.000 VND</span> </p>
+                    <i class="fa-solid fa-cart-shopping" alt="Thêm vào giỏ hàng" class="add-to-cart-icon" ></i>
+                </div>
+                <div class="menu-item" data-name="Combo gà sốt Hàn Quốc">
+                    <img src="../btl/anh123/combogahanquoc.jpg" alt="Combo" class="food-image">
+                    <div>
+                        <h3>Combo gà sốt Hàn Quốc</h3>
+                        <p>Gồm:1/2 gà rán sốt hàn quốc + 2 khoai chien +2 pepsi</p>
+                    </div>
+                    <p class="price">Giá: <span> 150.000 VND</span> </p>
+                    <i class="fa-solid fa-cart-shopping" alt="Thêm vào giỏ hàng" class="add-to-cart-icon" ></i>
+                </div>
+                <div class="menu-item" data-name="Combo mix vị">
+                    <img src="../btl/anh123/combomix.jpg" alt="Combo" class="food-image">
+                    <div>
+                        <h3>Combo mix vị</h3>
+                        <p>Gồm:1/2 gà rán nguyên bản +1/2 gà rán sốt mù tạt 1 coca</p>
+                    </div>
+                    <p class="price">Giá: <span> 159.000 VND</span> </p>
+                    <i class="fa-solid fa-cart-shopping" alt="Thêm vào giỏ hàng" class="add-to-cart-icon" ></i>
+                </div>
+                <div class="menu-item" data-name="Combo cặp đôi">
+                    <img src="../btl/anh123/combocapdoi.jpg" alt="Combo" class="food-image">
+                    <div>
+                        <h3>Combo cặp đôi</h3>
+                        <p>(1/2  rán truyền thống + 1 khoai tay +1 coca +1 pepsi)</p>
+                    </div>
+                    <p class="price">Giá: <span> 259.000 VND</span> </p>
+                    <i class="fa-solid fa-cart-shopping" alt="Thêm vào giỏ hàng" class="add-to-cart-icon" ></i>
+                </div>
+                <div class="menu-item" data-name="Combo gà xì dầu tỏi">
+                    <img src="../btl/anh123/sotsidautoi.jpg" alt="Combo" class="food-image">
+                    <div>
+                        <h3>Combo gà xì dầu tỏi</h3>
+                        <p>(1/2 Gà rán + 1/2 sốt xì dầu tỏi )</p>
+                        <br>
+                    </div>
+                    <p class="price">Giá: <span> 239.000 VND</span> </p>
+                    <i class="fa-solid fa-cart-shopping" alt="Thêm vào giỏ hàng" class="add-to-cart-icon" ></i>
+                </div>
+                <div class="menu-item" data-name="Combo trứng muối">
+                    <img src="../btl/anh123/combotrungmuoi.jpg" alt="Combo" class="food-image" >
+                    <div>
+                        <h3>Combo trứng muối</h3>
+                        <p>Gồm:1/2 trứng muối +1 khoai tây + pepsi</p>
+                    </div>
+                    <p class="price">Giá: <span> 150.000 VND</span> </p>
+                    <i class="fa-solid fa-cart-shopping" alt="Thêm vào giỏ hàng" class="add-to-cart-icon" ></i>
+                </div>
+                
+            </div>
+        </div>
+        <hr>
+        <div id="gagion" class="menuitem">
+            <h2>Gà Giòn </h2>
+            <div class="menu-list">
+                <div class="menu-item" data-name="Gà truyền thống">
+                    <img src="../btl/anh123/garantruyenthong.jpg" alt="gagion" class="food-image">
+                    <div>
+                        <h3>Gà rán truyền thống</h3>
+                       
+                    </div>
+                    <p class="price">Giá: <span>45.000 VND</span> </p>
+                    <i class="fa-solid fa-cart-shopping" alt="Thêm vào giỏ hàng" class="add-to-cart-icon" ></i>
+                </div>
+                <div class="menu-item" data-name="Gà rán sốt cay">
+                    <img src="../btl/anh123/gaxotcay.jpg" alt="gagion" class="food-image" >
+                    <div>
+                        <h3>Gà rán sốt cay</h3>
+                        
+                    </div>
+                    <p class="price">Giá: <span> 60.000 VND</span> </p>
+                    <i class="fa-solid fa-cart-shopping" alt="Thêm vào giỏ hàng" class="add-to-cart-icon" ></i>
+                </div>
+                <div class="menu-item" data-name="Gà giòn không xương">
+                    <img src="../btl/anh123/gakhongxuong.jpg" alt="gagion" class="food-image">
+                    <div>
+                        <h3>Gà giòn không xương</h3>
+                        
+                    </div>
+                    <p class="price">Giá: <span> 70.000 VND</span> </p>
+                    <i class="fa-solid fa-cart-shopping" alt="Thêm vào giỏ hàng" class="add-to-cart-icon" ></i>
+                </div>
+                <div class="menu-item" data-name="Gà rán mật ong">
+                    <img src="../btl/anh123/combogamatong.jpg" alt="gagion" class="food-image">
+                    <div>
+                        <h3>Gà rán mật ong</h3>
+                       
+                    </div>
+                    <p class="price">Giá: <span> 70.000 VND</span> </p>
+                    <i class="fa-solid fa-cart-shopping" alt="Thêm vào giỏ hàng" class="add-to-cart-icon" ></i>
+                </div>
+                <div class="menu-item" data-name="Gà rán sốt phô mai">
+                    <img src="../btl/anh123/garanphomai.jpg" alt="gagion" class="food-image">
+                    <div>
+                        <h3>Gà rán sốt phô mai</h3>
+                        
+                    </div>
+                    <p class="price">Giá: <span> 70.000 VND</span> </p>
+                    <i class="fa-solid fa-cart-shopping" alt="Thêm vào giỏ hàng" class="add-to-cart-icon" ></i>
+                </div>
+                <div class="menu-item" data-name="Gà rán mắm tỏi">
+                    <img src="../btl/anh123/gachienmam.jpg" alt="gagion" class="food-image" >
+                    <div>
+                        <h3>Gà rán mắm tỏi</h3>
+                       
+                    </div>
+                    <p class="price">Giá: <span> 60.000 VND</span> </p>
+                    <i class="fa-solid fa-cart-shopping" alt="Thêm vào giỏ hàng" class="add-to-cart-icon" ></i>
+                </div>
+                <div class="menu-item" data-name="Gà rán thập cẩm">
+                    <img src="../btl/anh123/garanle.jpg" alt="gagion" class="food-image">
+                    <div>
+                        <h3>Gà rán thập cẩm</h3>
+                        
+                    </div>
+                    <p class="price">Giá: <span> 60.000 VND</span> </p>
+                    <i class="fa-solid fa-cart-shopping" alt="Thêm vào giỏ hàng" class="add-to-cart-icon" ></i>
+                </div>
+                <div class="menu-item" data-name="Gà rán sốt Hàn Quốc">
+                    <img src="../btl/anh123/garanhanquoc.jpg" alt="gagion" class="food-image" >
+                    <div>
+                        <h3>Gà rán sốt Hàn Quốc</h3>
+                        
+                    </div>
+                    <p class="price">Giá: <span> 90.000 VND</span> </p>
+                    <i class="fa-solid fa-cart-shopping" alt="Thêm vào giỏ hàng" class="add-to-cart-icon" ></i>
+                </div>
+            </div>
+        </div>
+    
+       <hr>
+        <div id="ganuong" class="menuitem">
+            <h2>Gà nướng</h2>
+            <div class="menu-list">
+               
+                <div class="menu-item" data-name="Gà nướng BBQ">
+                    <img src="../btl/anh123/gabbq.jpg" alt="ganuong" class="food-image">
+                    <div>
+                        <h3>Gà nướng BBQ</h3>
+                      
+                    </div>
+                    <p class="price">Giá: <span>150.000 VND</span> </p>
+                    <i class="fa-solid fa-cart-shopping" alt="Thêm vào giỏ hàng" class="add-to-cart-icon" ></i>
+                 </div>
+                 <div class="menu-item" data-name="Gà nướng tỏi">
+                    <img src="../btl/anh123/gatoi.jpg" alt="ganuong" class="food-image">
+                    <div>
+                        <h3>Gà nướng tỏi</h3>
+                       
+                    </div>
+                    <p class="price">Giá: <span> 175.000 VND</span> </p>
+                    <i class="fa-solid fa-cart-shopping" alt="Thêm vào giỏ hàng" class="add-to-cart-icon" ></i>
+                </div>
+                <div class="menu-item" data-name="Gà nướng ống lam">
+                    <img src="../btl/anh123/ganuongong.jpg" alt="ganuong" class="food-image" >
+                    <div>
+                        <h3>Gà nướng ống lam</h3>
+                        
+                    </div>
+                    <p class="price">Giá: <span> 139.000 VND</span> </p>
+                    <i class="fa-solid fa-cart-shopping" alt="Thêm vào giỏ hàng" class="add-to-cart-icon" ></i>
+                 </div>
+              
+      
+        </div>
+
+
+        <hr>
+        <div id="monankem" class="menuitem" >
+            <h2>Món ăn kèm </h2>
+            <div class="menu-list">
+                <div class="menu-item" data-name="Khoai tây chiên">
+                    <img src="../btl/anh123/khoaitay.jpg" alt="monankem" class="food-image" >
+                    <div>
+                        <h3>Khoai tây chiên</h3>
+                      
+                    </div>
+                    <p class="price">Giá: <span>35.000 VND</span> </p>
+                    <i class="fa-solid fa-cart-shopping" alt="Thêm vào giỏ hàng" class="add-to-cart-icon" ></i>
+                 </div>
+                 <div class="menu-item" data-name="Khoai tây vỉong biển">
+                    <img src="../btl/anh123/khoairongbien.jpg" alt="monankem" class="food-image">
+                    <div>
+                        <h3>Khoai tây vị rong biển</h3>
+                      
+                    </div>
+                    <p class="price">Giá: <span>35.000 VND</span> </p>
+                    <i class="fa-solid fa-cart-shopping" alt="Thêm vào giỏ hàng" class="add-to-cart-icon" ></i>
+                 </div>
+                 <div class="menu-item" data-name="Khoai tây lắc phô mai">
+                    <img src="../btl/anh123/khoailacphomai.jpg" alt="monankem" class="food-image">
+                    <div>
+                        <h3>Khoai tây lắc phomai</h3>
+                      
+                    </div>
+                    <p class="price">Giá: <span>35.000 VND</span> </p>
+                    <i class="fa-solid fa-cart-shopping" alt="Thêm vào giỏ hàng" class="add-to-cart-icon" ></i>
+                 </div>
+                 <div class="menu-item" data-name="Bánh khoai">
+                    <img src="../btl/anh123/banhkhoai.jpg" alt="monankem" class="food-image" >
+                    <div>
+                        <h3>Bánh khoai</h3>
+                      
+                    </div>
+                    <p class="price">Giá: <span>49.000 VND</span> </p>
+                    <i class="fa-solid fa-cart-shopping" alt="Thêm vào giỏ hàng" class="add-to-cart-icon" ></i>
+                 </div>
+                 <div class="menu-item" data-name="Ngô chiên">
+                    <img src="../btl/anh123/ngochien.jpg" alt="monankem" class="food-image">
+                    <div>
+                        <h3>Ngô chiên</h3>
+                      
+                    </div>
+                    <p class="price">Giá: <span>25.000 VND</span> </p>
+                    <i class="fa-solid fa-cart-shopping" alt="Thêm vào giỏ hàng" class="add-to-cart-icon" ></i>
+                 </div>
+                 <div class="menu-item" data-name="Salad bắp cải">
+                    <img src="../btl/anh123/bapcai.jpg" alt="monankem" class="food-image">
+                    <div>
+                        <h3>Salad bắp cải</h3>
+                      
+                    </div>
+                    <p class="price">Giá: <span>0 VND</span> </p>
+                    <i class="fa-solid fa-cart-shopping" alt="Thêm vào giỏ hàng" class="add-to-cart-icon" ></i>
+                 </div>
+                 <div class="menu-item" data-name="Salad ức gà">
+                    <img src="../btl/anh123/ucga.jpg" alt="monankem" class="food-image" >
+                    <div>
+                        <h3>Salad ức gà</h3>
+                      
+                    </div>
+                    <p class="price">Giá: <span>49.000VND</span> </p>
+                    <i class="fa-solid fa-cart-shopping" alt="Thêm vào giỏ hàng" class="add-to-cart-icon" ></i>
+                 </div>
+                 <div class="menu-item" data-name="Mỳ ý">
+                    <img src="../btl/anh123/myy.jpg" alt="monankem" class="food-image" >
+                    <div>
+                        <h3>Mỳ ý</h3>
+                      
+                    </div>
+                    <p class="price">Giá: <span>35.000 VND</span> </p>
+                    <i class="fa-solid fa-cart-shopping" alt="Thêm vào giỏ hàng" class="add-to-cart-icon" ></i>
+                 </div>
+                 
+            </div>
+        <hr>
+        <div id="nuoc" class="menuitem">
+            <h2>Đồ uống </h2>
+            <div class="menu-list">
+                <div class="menu-item" data-name="Coca">
+                    <img src="../btl/anh123/coca.jpg" alt="douong" class="food-image">
+                    <div>
+                        <h3>Coca</h3>
+                      
+                    </div>
+                    <p class="price">Giá: <span>15.000 VND</span> </p>
+                    <i class="fa-solid fa-cart-shopping" alt="Thêm vào giỏ hàng" class="add-to-cart-icon" ></i>
+                 </div>
+                 <div class="menu-item" data-name="Pepsi">
+                    <img src="../btl/anh123/pepsi.jpg" alt="douong" class="food-image">
+                    <div>
+                        <h3>Pepsi</h3>
+                      
+                    </div>
+                    <p class="price">Giá: <span>15.000 VND</span> </p>
+                    <i class="fa-solid fa-cart-shopping" alt="Thêm vào giỏ hàng" class="add-to-cart-icon" ></i>
+                 </div>
+                 <div class="menu-item" data-name="Fanta">
+                    <img src="../btl/anh123/fanta.jpg" alt="douong" class="food-image">
+                    <div>
+                        <h3>Fanta</h3>
+                      
+                    </div>
+                    <p class="price">Giá: <span>15.000 VND</span> </p>
+                    <i class="fa-solid fa-cart-shopping" alt="Thêm vào giỏ hàng" class="add-to-cart-icon" ></i>
+                 </div>
+                 
+                 <div class="menu-item" data-name="7UP">
+                    <img src="../btl/anh123/7up.jpg" alt="douong" class="food-image">
+                    <div>
+                        <h3>7UP</h3>
+                      
+                    </div>
+                    <p class="price">Giá: <span>15.000 VND</span> </p>
+                    <i class="fa-solid fa-cart-shopping" alt="Thêm vào giỏ hàng" class="add-to-cart-icon" ></i>
+                 </div>
+            </div>
+        </div>    
+    </section>
+    
+    <script src="cart1.js"></script>
+</body>
+</html>

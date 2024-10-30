@@ -1,0 +1,116 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  nav h1{
+    margin:0 auto;
+    font-size: 35px;
+    color:rgb(186, 120, 34);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  nav a{
+    font-size: 40;
+    color: rgb(2, 43, 40);
+  }
+  .fa-house{
+    font-size: 24px;
+    cursor: pointer;
+  }
+ .fa-house:hover{
+    color: #cd4a08;
+ }
+.container{
+    display: flex;
+    min-height: 100vh;
+    background-color: rgb(247, 229, 203);
+    background: url(anh.jpg);
+    background-size: cover;
+    
+}
+.reservation{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom,white -100%,transparent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+}
+.reservation form{
+    padding: 50px;
+    width: 30%;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255,255, 0.5);
+}
+.reservation form h2{
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: rgb(143, 96, 35);
+    text-align: center;
+}
+.reservation form div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.reservation form input{
+    width: 80%;
+    padding: 15px;
+    margin: 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+button {
+    background-color: #f76628;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 15px;
+ }
+ 
+ button:hover {
+    background-color: #cd4a08;
+ }
+ 
+ 
+ p{
+    margin-left: 7px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    
+ }
+ @media (max-width:979px) {
+    
+    .reservationForm{
+        max-width: 80%;
+    }
+ }
+ @media (max-width: 480px){
+    .reservation {
+        max-width: 80%; /* Giảm thêm chiều rộng khi màn hình nhỏ hơn 480px */
+        padding: 15px; /* Giảm padding để biểu mẫu nhỏ hơn */
+    }
+
+    h2 {
+        font-size: 30px; /* Giảm kích thước tiêu đề */
+    }
+    
+    .input-group input,
+    .button-group button {
+        padding: 8px; /* Giảm padding để các trường nhỏ hơn */
+        font-size: 0.9em; /* Giảm kích thước font */
+    }
+ }
